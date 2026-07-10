@@ -24,9 +24,9 @@ export default function Hero() {
         preload="auto"
         onLoadedData={() => setIsLoaded(true)}
         className={`absolute inset-0 h-full w-full object-cover transition-opacity duration-1000 ease-out ${
-          isLoaded ? "opacity-100" : "opacity-0"
+          isLoaded ? "opacity-60" : "opacity-0"
         }`}
-        src="/video-hero.mp4"
+        src="https://assets.mixkit.co/videos/preview/mixkit-top-view-of-a-beautiful-beach-14023-large.mp4"
       />
 
       {/* Overlay oscuro cinematográfico: base + viñeta + degradado inferior */}
