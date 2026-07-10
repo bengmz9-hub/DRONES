@@ -22,7 +22,7 @@ export default function Hero() {
         playsInline
         preload="auto"
         className="absolute inset-0 h-full w-full object-cover opacity-50"
-        src="https://assets.mixkit.co/videos/preview/mixkit-top-view-of-a-beautiful-beach-14023-large.mp4"
+        src="/video-hero.mp4"
       />
 
       {/* 🎬 Un único overlay equilibrado para garantizar el contraste del texto */}
