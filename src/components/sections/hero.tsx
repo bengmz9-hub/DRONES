@@ -1,10 +1,9 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 
 export default function Hero() {
   const videoRef = useRef<HTMLVideoElement>(null);
-  const [isLoaded, setIsLoaded] = useState(false);
 
   useEffect(() => {
     videoRef.current?.play().catch(() => {
@@ -25,8 +24,8 @@ export default function Hero() {
         src="https://assets.mixkit.co/videos/preview/mixkit-top-view-of-a-beautiful-beach-14023-large.mp4"
       />
 
-      {/* Overlay suavizado para no tapar el contenido */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-black/40" />
+      {/* Overlay suavizado cinematográfico */}
+      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-black/40" />
 
       {/* Marco de encuadre — guiño al visor de cámara del dron */}
       <div className="pointer-events-none absolute inset-6 hidden border border-white/15 sm:inset-10 sm:block md:inset-14">
